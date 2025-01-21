@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilisateurs</title>
+  <link rel="stylesheet" href="../dist/css/main.min.css" type="text/css">
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Affinicia</h1>
+    <ul>
+      <li><a href="#"><img src="../images/companies.svg" alt="Companies">Companies<img src="../images/keyboard.svg" alt="down"></a></li>
+      <li><a href="#"><img src="../images/reporting.svg" alt="facture">Reporting</a></li>
+      <li><a href="#"><img src="../images/fact_check.svg" alt="facture">Facturation<img src="../images/keyboard.svg" alt="down"></a></li>
+      <li><a href="#"><img src="../images/settings.svg" alt="settings">Administration<img src="../images/keyboard.svg" alt="down"></a></li>
+    </ul>
+
+    <div class="logout-btn">
+      <img src="../images/user-icon.svg" alt="Utilisateur">
+      <span>Nom/Prénom</span>
+      <a href="#"><img src="../images/logout.svg" alt="Déconnexion"></a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+    <h2>Utilisateurs</h2>
+
+     <div class="search-bar">
+          
+          <span class="search-icon"><img src="../images/search.svg" alt="Rechercher"></span>
+          <input type="text" placeholder="Rechercher">
+        </div></div>
+        <hr>
+    <div class="header">
+      <div><p>400 utilisateurs</p></div>
+      <div class="actions">
+        
+        <div class="search-bar">
+          
+          <span class="search-icon"><img src="../images/search.svg" alt="Rechercher un utilisateur"></span>
+          <input type="text" placeholder="Rechercher un utilisateur">
+        </div>
+        <button class="btn">
+          <i><img src="../images/filter_list.svg" alt="Rechercher un utilisateur"></i> Filtre
+        </button>
+        <button class="btn" style="background-color: #007bff; color: #fff;">
+          + Ajouter un utilisateur
+        </button>
+      </div>
+    </div>
+    <hr>
+   
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Utilisateur</th>
+            <th>Email</th>
+            <th>Centre d'appel</th>
+            <th>Rôle</th>
+            <th>Dernière connexion</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nicolas Renner</td>
+            <td>nicolas.renner@gmail.com</td>
+            <td>Telecom</td>
+            <td>Administrateur</td>
+            <td>17/05/2024</td>
+            <td>Connecté</td>
+          </tr>
+          <tr>
+            <td>Nicolas Renner</td>
+            <td>nicolas.renner@gmail.com</td>
+            <td>Active Contact</td>
+            <td>Opérationnel</td>
+            <td>17/05/2024</td>
+            <td>Connecté</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+    <div class="page-size">
+      <label for="page-size">Afficher :</label>
+      <select id="page-size">
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select>
+    </div>
+
+</body>
+</html>
